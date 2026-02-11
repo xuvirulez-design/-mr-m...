@@ -14,7 +14,7 @@ body{
   text-align:center;
 }
 
-/* START SCREEN */
+/* Start Screen */
 .startScreen{
   position:fixed;
   inset:0;
@@ -51,14 +51,14 @@ body{
   cursor:pointer;
 }
 
-/* MAIN CONTENT */
+/* Content */
 .content{
   display:none;
   padding:40px 20px;
 }
 
 .card{
-  max-width:900px;
+  max-width:1000px;
   margin:auto;
   background:rgba(255,255,255,0.15);
   padding:30px;
@@ -77,7 +77,6 @@ h1{
   gap:20px;
 }
 
-/* WICHTIG: Bilder komplett sichtbar */
 .gallery img{
   width:100%;
   height:auto;
@@ -85,7 +84,6 @@ h1{
   box-shadow:0 15px 35px rgba(0,0,0,0.3);
 }
 
-/* Desktop nebeneinander */
 @media(min-width:768px){
   .gallery{
     flex-direction:row;
@@ -100,37 +98,60 @@ h1{
   font-size:20px;
   line-height:1.6;
 }
+
+/* Video */
+.videoSection{
+  margin-top:40px;
+}
+
+.videoSection video{
+  width:100%;
+  max-width:800px;
+  border-radius:20px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
 </style>
 </head>
 
 <body>
 
-<!-- START -->
+<!-- Musik -->
+<audio id="bgMusic" src="son-arzum.mp3" loop></audio>
+
+<!-- Start -->
 <div class="startScreen" id="startScreen">
   <div class="startOverlay"></div>
   <div class="startBox">
-    <h2> klick mich an :) ❤️</h2>
+    <h2>Klick mich an ❤️</h2>
     <button class="startBtn" onclick="openPage()"> ❤️</button>
   </div>
 </div>
 
-<!-- CONTENT -->
+<!-- Content -->
 <div class="content" id="content">
   <div class="card">
     <h1>Sevgililer günü hediyen.. ❤️</h1>
-    <strong>Hatte dir damals Hugo versprochen, hiç vermedim.. ❤️</strong><br>
-
+      <strong>Hatte dir damals Hugo versprochen, hiç vermedim.. ❤️</strong><br>
     <div class="gallery">
-      <img src="IMG_2869.PNG" alt="Bild 1">
-      <img src="IMG_2870.PNG" alt="Bild 2">
+      <img src="IMG_2869.PNG">
+      <img src="IMG_2870.PNG">
     </div>
 
     <div class="text">
-      
-       weißt du noch damals als wir meinten Ömrümün sonuna kadar sevicem..
-                Seni cok seviyorum Cansu
-      <h1>Alles gute zum Valentinstag </h1>
+
+    </h2> weißt du noch als wir beide meinten son nefesime kadar sen ol yanimda </h2>
+      <h2>oder ömrümün sonuna kadar sevicem birbirimizi..</h2>
+      </h2>seni cok seviyorum Cansu</h2>
     </div>
+
+    <!-- VIDEO GANZ UNTEN -->
+    <div class="videoSection">
+      <video controls>
+        <source src="bizim.mp4" type="video/mp4">
+        Dein Browser unterstützt dieses Video nicht.
+      </video>
+    </div>
+
   </div>
 </div>
 
@@ -138,10 +159,9 @@ h1{
 function openPage(){
   document.getElementById("startScreen").style.display="none";
   document.getElementById("content").style.display="block";
+  document.getElementById("bgMusic").play();
 }
 </script>
 
 </body>
 </html>
-
-
