@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Für Cansu ❤️</title>
+
+  <style>
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg,#ff6a88,#ff99ac);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      text-align:center;
+    }
+
+    .card{
+      background: rgba(255,255,255,0.15);
+      padding:30px 20px;
+      border-radius:25px;
+      width:90%;
+      max-width:600px;
+      box-shadow:0 20px 50px rgba(0,0,0,0.25);
+    }
+
+    .duck{
+      width:80px;
+      border-radius:20px;
+      margin-bottom:10px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    h1{
+      margin:10px 0;
+      font-size:32px;
+    }
+
+    button{
+      margin-top:15px;
+      padding:12px 25px;
+      border:none;
+      border-radius:30px;
+      background:white;
+      color:#ff4e78;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.2s;
+    }
+
+    button:hover{
+      transform:scale(1.05);
+      background:#ffe6eb;
+    }
+
+    .message{
+      display:none;
+      margin-top:20px;
+      font-size:18px;
+      line-height:1.6;
+      background: rgba(255,255,255,0.1);
+      padding:15px;
+      border-radius:15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img src="hugo.webp" class="duck" alt="Hugo 🦆">
+
+    <h1>Für Cansu ❤️</h1>
+    <p>Zum Valentinstag</p>
+
+    <button onclick="showMessage()">Klick hier</button>
+
+    <div class="message" id="msg">
+      <strong></strong><br><br>
+      Hatte dir damals Hugo versprochen, hiç vermedim..<br><br>
+      Alles Liebe zum Valentinstag. ❤️
+    </div>
+  </div>
+
+<script>
+function showMessage(){
+  document.getElementById("msg").style.display="block";
+}
+</script>
+
+</body>
+</html>
