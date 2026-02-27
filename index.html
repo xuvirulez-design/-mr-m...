@@ -1,158 +1,211 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Für Cansu ❤️</title>
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-588PFPZ5QK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Für Cansu ❤️</title>
 
-  gtag('config', 'G-588PFPZ5QK');
-</script>
-<style>
-body{
-  margin:0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg,#ff6a88,#ff99ac);
-  color:white;
-  text-align:center;
-}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-588PFPZ5QK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-588PFPZ5QK");
+  </script>
 
-/* Start Screen */
-.startScreen{
-  position:fixed;
-  inset:0;
-  background:url("IMG_2619.PNG") center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
+  <style>
+    :root{
+      --pink1:#ff6a88;
+      --pink2:#ff99ac;
+      --accent:#ff4e78;
+    }
 
-.startOverlay{
-  position:absolute;
-  inset:0;
-  background:rgba(255,105,180,0.5);
-}
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg,var(--pink1),var(--pink2));
+      color:white;
+      text-align:center;
+    }
 
-.startBox{
-  position:relative;
-  z-index:2;
-  background:white;
-  color:#ff4e78;
-  padding:35px 45px;
-  border-radius:25px;
-  box-shadow:0 20px 50px rgba(0,0,0,0.4);
-}
+    /* Start Screen */
+    .startScreen{
+      position:fixed;
+      inset:0;
+      background:url("IMG_2619.PNG") center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
 
-.startBtn{
-  margin-top:15px;
-  padding:12px 25px;
-  border:none;
-  border-radius:30px;
-  background:#ff4e78;
-  color:white;
-  font-size:18px;
-  cursor:pointer;
-}
+    .startOverlay{
+      position:absolute;
+      inset:0;
+      background:rgba(255,105,180,0.5);
+    }
 
-/* Content */
-.content{
-  display:none;
-  padding:40px 20px;
-}
+    .startBox{
+      position:relative;
+      z-index:2;
+      background:white;
+      color:var(--accent);
+      padding:35px 45px;
+      border-radius:25px;
+      box-shadow:0 20px 50px rgba(0,0,0,0.4);
+      max-width: 90%;
+    }
 
-.card{
-  max-width:1000px;
-  margin:auto;
-  background:rgba(255,255,255,0.15);
-  padding:30px;
-  border-radius:30px;
-  box-shadow:0 20px 50px rgba(0,0,0,0.25);
-}
+    .startBtn{
+      margin-top:15px;
+      padding:12px 25px;
+      border:none;
+      border-radius:30px;
+      background:var(--accent);
+      color:white;
+      font-size:18px;
+      cursor:pointer;
+    }
 
-h1{
-  font-size:36px;
-  margin-bottom:25px;
-}
+    .startBtn:active{ transform: scale(0.98); }
 
-.gallery{
-  display:flex;
-  flex-direction:column;
-  gap:20px;
-}
+    /* Content */
+    .content{
+      display:none;
+      padding:40px 20px;
+    }
 
-.gallery img{
-  width:100%;
-  height:auto;
-  border-radius:20px;
-  box-shadow:0 15px 35px rgba(0,0,0,0.3);
-}
+    .card{
+      max-width:1000px;
+      margin:auto;
+      background:rgba(255,255,255,0.15);
+      padding:30px;
+      border-radius:30px;
+      box-shadow:0 20px 50px rgba(0,0,0,0.25);
+      backdrop-filter: blur(6px);
+    }
 
-@media(min-width:768px){
-  .gallery{
-    flex-direction:row;
-  }
-  .gallery img{
-    width:48%;
-  }
-}
+    h1{
+      font-size:36px;
+      margin:0 0 15px;
+    }
 
-.text{
-  margin-top:25px;
-  font-size:20px;
-  line-height:1.6;
-}
+    .subtitle{
+      display:block;
+      font-size:18px;
+      margin-bottom:25px;
+    }
 
-/* Video */
-.videoSection{
-  margin-top:40px;
-}
+    .gallery{
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+      margin-top: 10px;
+    }
 
-.videoSection video{
-  width:100%;
-  max-width:800px;
-  border-radius:20px;
-  box-shadow:0 15px 40px rgba(0,0,0,0.4);
-}
-</style>
+    .gallery img{
+      width:100%;
+      height:auto;
+      border-radius:20px;
+      box-shadow:0 15px 35px rgba(0,0,0,0.3);
+      display:block;
+    }
+
+    @media(min-width:768px){
+      .gallery{
+        flex-direction:row;
+      }
+      .gallery img{
+        width:48%;
+      }
+    }
+
+    .text{
+      margin-top:25px;
+      font-size:20px;
+      line-height:1.6;
+    }
+
+    /* Video */
+    .videoSection{
+      margin-top:40px;
+    }
+
+    .videoSection video{
+      width:100%;
+      max-width:800px;
+      border-radius:20px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Musik -->
+  <audio id="bgMusic" src="musik1.mp3" loop preload="auto"></audio>
 
-<!-- Musik -->
-<audio id="bgMusic" src="musik1.mp3" loop preload="auto"></audio>
-
-<!-- Start -->
-<div class="startScreen" id="startScreen">
-  <div class="startOverlay"></div>
-  <div class="startBox">
-    <h2>klick mich an❤️</h2>
-    <button class="startBtn" onclick="openPage()"> klick mich an❤️</button>
-  </div>
-</div>
-
-<!-- Content -->
-<div class="content" id="content">
-  <div class="card">
-    <h1>28.2.2026 ❤️</h1>
-      <strong>wird schön vertrau mir  ❤️</strong><br>
-    <div class="gallery">
-      <img src="IMG_3453.JPG>
-      
+  <!-- Start -->
+  <div class="startScreen" id="startScreen">
+    <div class="startOverlay" aria-hidden="true"></div>
+    <div class="startBox">
+      <h2>klick mich an ❤️</h2>
+      <button class="startBtn" id="startBtn" type="button">❤️</button>
     </div>
+  </div>
 
-   <div class="text">
+  <!-- Content -->
+  <div class="content" id="content">
+    <div class="card">
+      <h1>28.2.2026 ❤️</h1>
+      <span class="subtitle"><strong>wird schön vertrau mir ❤️</strong></span>
 
-  <p>du hattest nur 2 optionen ich stehe morgen um 10:30 vor der tür :D </p>
-     
-     <p>11 geht auch aber wird dann eng mit der reservierung  </p>
+      <div class="gallery">
+        <img src="IMG_3453.JPG" alt="Foto 1" />
+        <!-- Wenn du ein zweites Bild willst, einfach aktivieren:
+        <img src="IMG_XXXX.JPG" alt="Foto 2" />
+        -->
+      </div>
 
-  <p>HAB ALLLEEEES schon Reserviert und bezaaaahlt <3</p>
+      <div class="text">
+        <p>du hattest nur 2 optionen ich stehe morgen um 10:30 vor der tür :D</p>
+        <p>11 geht auch aber wird dann eng mit der reservierung</p>
+        <p>HAB ALLLEEEES schon reserviert und bezahaaahlt &lt;3</p>
+      </div>
+
+      <!-- Optional: Video (Datei in den gleichen Ordner legen und Namen anpassen)
+      <div class="videoSection">
+        <h2>Video ❤️</h2>
+        <video controls preload="metadata">
+          <source src="video.mp4" type="video/mp4" />
+          Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <script>
+    function openPage(){
+      const start = document.getElementById("startScreen");
+      const content = document.getElementById("content");
+      const music = document.getElementById("bgMusic");
+
+      if (start) start.style.display = "none";
+      if (content) content.style.display = "block";
+
+      // Musik starten (geht i.d.R. nur nach User-Interaktion)
+      if (music) {
+        music.play().catch(() => {
+          // Wenn Browser blockt: Seite geht trotzdem auf, Musik halt nicht automatisch
+          console.log("Audio autoplay blocked by browser.");
+        });
+      }
+    }
+
+    document.getElementById("startBtn").addEventListener("click", openPage);
+  </script>
+</body>
+</html>
      
      
 
